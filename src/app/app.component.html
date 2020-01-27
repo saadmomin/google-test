@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="zipCode">
+<button type="button" (click)="submit()">Submit</button>
+
+<div *ngIf="googleData !== null">
+  {{googleData | json }}
+</div>
+
